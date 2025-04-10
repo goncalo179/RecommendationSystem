@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Amazon Electronics Recommendation System
 
@@ -51,3 +52,6 @@ This usually happens if you're using "numpy>=2.0", which is incompatible with "s
 !pip install "numpy<2.0"
 ```
 
+=======
+# RecommendationSystem
+>>>>>>> cf8580d2e44e2f674aa97eba931dd74d5c0b2975
