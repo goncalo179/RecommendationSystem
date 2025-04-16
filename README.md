@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # Amazon Electronics Recommendation System
 
@@ -52,6 +51,65 @@ This usually happens if you're using "numpy>=2.0", which is incompatible with "s
 !pip install "numpy<2.0"
 ```
 
-=======
-# RecommendationSystem
->>>>>>> cf8580d2e44e2f674aa97eba931dd74d5c0b2975
+
+## Dataset
+This project uses the [Amazon Product Reviews dataset](https://www.kaggle.com/datasets/goncalo179/amazon-electronics-ratings) available on Kaggle.
+
+## Option 1: Manual Download (Quick & Easy)
+You can download the CSV file directly by visiting the Kaggle page linked above.
+After downloading, unzip the file and place ratings_Electronics.csv in the data/ folder of this project.
+
+## Option 2: Use Kaggle API (for reproducible notebooks and automation)
+If you prefer downloading via code (especially useful when working in Google Colab), follow the instructions below to set up the Kaggle API.
+
+
+## Setting Up Kaggle API Access
+
+1. Create a Kaggle account if you don't have one already: [Kaggle Sign-Up](https://www.kaggle.com/account).
+2. Navigate to your Kaggle account settings page [here](https://www.kaggle.com/account) and click "Create New API Token". This will download a `kaggle.json` file containing your API credentials.
+3. Upload the "kaggle.json" file to your Colab environment or store it securely in your local setup.
+
+
+## Upload kaggle.json manually (recommended for one-time use)
+
+- Go to your Kaggle account → Account → Create New API Token
+- This downloads a file called kaggle.json.
+- Upload it to Colab using the code below:
+
+```bash
+from google.colab import files
+files.upload()  # Upload kaggle.json manually
+
+!mkdir -p ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+```
+
+### Load from Google Drive (if stored there securely)
+
+- If you prefer storing your kaggle.json in Google Drive (e.g. inside a private folder)
+
+```bash
+from google.colab import drive
+drive.mount('/content/drive')
+
+!mkdir -p ~/.kaggle
+!cp /content/drive/MyDrive/<folder_name>/kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+```
+
+# Download the dataset
+
+```bash
+!kaggle datasets download -d goncalo179/amazon-electronics-ratings
+```
+
+# Unzip the dataset
+
+```bash
+# Make a data/ directory if it doesn't exist
+!mkdir -p data/
+
+# Unzip the dataset into the data/ folder
+!unzip -q amazon-electronics-ratings.zip -d data/
+```
