@@ -26,13 +26,13 @@ The goal is to improve user experience by suggesting relevant products based on 
 
 ## Usage
 1. Clone the repository:
- 
+
 ```bash
-!git clone https://github.com/goncalo179/LeadPrioritization.git
+!git clone https://github.com/goncalo179/RecommendationSystem.git
 ```
 
 2. Install dependencies:
-    
+
 ```bash
 !pip install -r requirements.txt
 ```
@@ -65,8 +65,8 @@ If you prefer downloading via code (especially useful when working in Google Col
 
 ## Setting Up Kaggle API Access
 
-1. Create a Kaggle account if you don't have one already: [Kaggle Sign-Up](https://www.kaggle.com/account).
-2. Navigate to your Kaggle account settings page [here](https://www.kaggle.com/account) and click "Create New API Token". This will download a `kaggle.json` file containing your API credentials.
+1. Create a Kaggle account if you don't have one already: [Kaggle Sign-Up](https://www.kaggle.com).
+2. Navigate to your Kaggle account settings page [here](https://www.kaggle.com/settings) and click "Create New API Token". This will download a `kaggle.json` file containing your API credentials.
 3. Upload the "kaggle.json" file to your Colab environment or store it securely in your local setup.
 
 
@@ -91,7 +91,7 @@ files.upload()  # Upload kaggle.json manually
 
 ```bash
 from google.colab import drive
-drive.mount('/content/drive')
+drive.mount("/content/drive")
 
 !mkdir -p ~/.kaggle
 !cp /content/drive/MyDrive/<folder_name>/kaggle.json ~/.kaggle/
