@@ -113,3 +113,10 @@ drive.mount("/content/drive")
 # Unzip the dataset into the data/ folder
 !unzip -q amazon-electronics-ratings.zip -d data/
 ```
+
+## License
+
+This project is intended for educational and portfolio purposes only.  
+Parts of the codebase are adapted from coursework and training materials.  
+Not for commercial use.  
+Licensed under the [MIT License](LICENSE).
