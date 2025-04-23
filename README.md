@@ -4,6 +4,8 @@
 This project builds a recommendation system for Amazon's electronics products using collaborative filtering techniques.
 The goal is to improve user experience by suggesting relevant products based on historical rating patterns.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/goncalo179/RecommendationSystem/blob/main/notebooks/Amazon_Product_Recommendation_System.ipynb)
+
 ## Project Structure
 - **data/**: Contains the raw data files ("ratings_Electronics.csv").
 - **notebooks/**: Jupyter notebooks with data cleaning, visualization, and analysis ("Amazon_Product_Recommendation_System.ipynb").
